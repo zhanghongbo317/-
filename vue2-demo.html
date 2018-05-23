@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--引入js-->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+		
+	</head>
+	<body>
+	    <div id="app">
+	        <h1 v-if='bool'>这是if</h1>
+	        <h1 v-show='bool'>这是show</h1>
+	    </div>
+	</body>
+</html>
+<script type="text/javascript">
+	
+	var dataModel = {
+	    bool:false
+	}
+	
+	
+	var vm = new Vue({
+	    el:"#app",
+	    data:dataModel
+	})
+</script>
